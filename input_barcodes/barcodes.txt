@@ -1,0 +1,3 @@
+NNNATTAGC	90_Pbp2-HF_control_Ab
+NNNCACTGT	91_Pbp2-HF_control_Ea
+NNNTGTCAC	92_Pbp2-HF_control_Ec
