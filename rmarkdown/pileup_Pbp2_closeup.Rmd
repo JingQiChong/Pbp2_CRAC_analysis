@@ -190,7 +190,8 @@ SML1seq_plot <- plot_pileup_one(SML1seq_df,
     labs(title = "SML1 pileup plot")
 SML1seq_plot
 
-ggsave(plot = SML1seq_plot, filename = "../results/figure_pileup/SML1_seqplot.png",
+ggsave(plot = SML1seq_plot, 
+       filename = here::here("results", "figure_pileup", "SML1_seqplot.png"),
        height = 3, width=10, device = "png")
 ```  
 
@@ -267,8 +268,12 @@ NPC2_2_widerep_plot <-
   theme(plot.margin = margin(t=10,b = 25)) 
   #  annotate_CNN(filter(CNN_positions_bytx,target=="NPC2")$mid) 
 
-#pileup_plot_allgenes <- 
- # plot_grid(SML1_widerep_plot,DED1_widerep_plot,NPC2_1_widerep_plot,NPC2_2_widerep_plot ncol = 1) 
+pileup_plot_allgenes <-
+  plot_grid(SML1_widerep_plot, 
+            DED1_widerep_plot, 
+            NPC2_1_widerep_plot, 
+            NPC2_2_widerep_plot,
+            ncol = 1)
 
 
 pileup_plot_allgenes
